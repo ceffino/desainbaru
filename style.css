@@ -33,10 +33,10 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  width: 30%;
+  width: 50%;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 nav ul li a {
@@ -52,7 +52,7 @@ nav button {
   position: relative;
   background-color: #232340;
   color: white;
-  padding: 8px 0;
+  padding: 5px 3px;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -109,7 +109,7 @@ nav button {
 
 @media (max-width: 768px) {
   nav ul {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -120,9 +120,7 @@ nav button {
   nav ul {
     position: absolute;
     left: 0;
-    right: 0;
     top: 0;
-    bottom: 0;
     flex-direction: column;
     height: 80vh;
     width: 100%;
@@ -133,7 +131,6 @@ nav button {
     transform: translateX(-100%);
     transition: all 0.5s;
     opacity: 0;
-    padding-top: 30px;
     font-weight: 900;
   }
 
@@ -154,17 +151,80 @@ nav button {
     height: 363px;
     float: right;
   }
-  .container {
-    height: 500px;
-  }
-}
-
-.container {
-  height: 600px;
-  align-items: center;
 }
 
 .bg {
-  width: 500;
-  height: 500px;
+  width: 400px;
+  height: 450px;
+}
+
+section h1 {
+  font-weight: 900;
+}
+
+section .baris {
+  padding-left: 150px;
+}
+
+#about {
+  height: 1670px;
+  background-color: #323259;
+  margin-top: 50px;
+}
+
+#about img {
+  width: 970px;
+  height: 530px;
+  margin-top: 70px;
+  min-width: 100px;
+}
+
+#about h2 {
+  padding-left: 80px;
+}
+
+.oval {
+  width: 402px;
+  height: 402px;
+  left: 854px;
+  top: 726px;
+  background-color: #232340;
+  box-shadow: 0px 23px 50px rgba(0, 0, 0, 0.25);
+}
+
+.oval .number {
+  height: 239px;
+  left: 0%;
+  right: 0%;
+  top: calc(50% - 239px / 2 + 0.5px);
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 200px;
+  line-height: 239px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.oval small {
+  height: 32px;
+  left: 21.22%;
+  right: 21.63%;
+  top: calc(50% - 32px / 2 + 103px);
+
+  /* heading 6 */
+
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+  letter-spacing: -0.2px;
+
+  /* color/white */
+
+  color: #ffffff;
 }
