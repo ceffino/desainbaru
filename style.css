@@ -111,6 +111,9 @@ nav button {
   nav ul {
     width: 60%;
   }
+  .rounded {
+    display: flex;
+  }
 }
 
 @media (max-width: 576px) {
@@ -150,6 +153,48 @@ nav button {
     width: 287px;
     height: 363px;
     float: right;
+    margin-top: 50px;
+  }
+  .rounded {
+    display: none;
+  }
+  .oval {
+    margin: auto;
+    margin-top: 50px;
+    width: 310px;
+    height: 310px;
+  }
+  .oval small {
+    text-align: center;
+  }
+
+  #recent {
+    width: 375px;
+    height: 1348px;
+    left: 0.5px;
+    top: 2734px;
+  }
+  #recent h2 {
+    width: 255px;
+    height: 48px;
+    left: 32px;
+    top: 234px;
+
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    letter-spacing: -0.4px;
+
+    color: #232340;
+  }
+  #recent .row {
+    width: 311px;
+    height: 355.56px;
+
+    border-radius: 16px;
   }
 }
 
@@ -172,11 +217,10 @@ section .baris {
   margin-top: 50px;
 }
 
-#about img {
+.rounded {
   width: 970px;
   height: 530px;
   margin-top: 70px;
-  min-width: 100px;
 }
 
 #about h2 {
@@ -207,24 +251,45 @@ section .baris {
 }
 
 .oval small {
-  height: 32px;
-  left: 21.22%;
-  right: 21.63%;
-  top: calc(50% - 32px / 2 + 103px);
+  text-align: center;
+}
 
-  /* heading 6 */
+#recent {
+  width: 1440px;
+  height: 1348px;
+  left: 0.5px;
+  top: 2734px;
+}
+
+#recent .row .left {
+  width: 367px;
+  height: 500px;
+  background: #ffce79;
+  border-radius: 24px;
+}
+
+#recent .row .right {
+  width: 367px;
+  height: 500px;
+
+  background: #d1ecfd;
+  border-radius: 24px;
+}
+
+#recent h2 {
+  width: 668px;
+  height: 100px;
+  left: 335.3px;
+  top: 2911px;
 
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  /* identical to box height, or 133% */
+  font-size: 84px;
+  line-height: 100px;
+  letter-spacing: -1px;
 
-  text-align: center;
-  letter-spacing: -0.2px;
+  /* color/dark */
 
-  /* color/white */
-
-  color: #ffffff;
+  color: #232340;
 }
